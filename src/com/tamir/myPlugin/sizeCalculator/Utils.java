@@ -13,6 +13,10 @@ import java.util.regex.Pattern;
 
 public class Utils
 {
+    private static final Pattern splitFieldPattern = Pattern.compile("(.*)=(.*);(.*)");
+    private static final int FIELD_DEF_INDEX = 1;
+    private static final int FIELD_VALUE_INDEX = 2;
+    private static final int FIELD_COMMENT_INDEX = 3;
     private static List<String> operatorList = Arrays.asList("+", "-", "/", "*");
     
     public static Double calculateExpression(String expressionToCalc)
@@ -31,11 +35,6 @@ public class Utils
             return null;
         }
     }
-    
-    private static final Pattern splitFieldPattern = Pattern.compile("(.*)=(.*);(.*)");
-    private static final int FIELD_DEF_INDEX = 1;
-    private static final int FIELD_VALUE_INDEX = 2;
-    private static final int FIELD_COMMENT_INDEX = 3;
     
     public static PsiField createDoubleField(PsiField psiField, Project project, PsiClass psiClass)
     {

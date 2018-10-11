@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7175d0ed-5316-4e41-a5bd-6998dc8403d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tamir/myPlugin/sizeCalculator/CalculateManySizesAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tamir/myPlugin/sizeCalculator/CalculateManySizesAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tamir/myPlugin/sizeCalculator/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tamir/myPlugin/sizeCalculator/Utils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -80,14 +79,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="984" />
+          <entry key="java" value="1019" />
           <entry key="regexp" value="39" />
           <entry key="xml" value="89" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="984" />
+          <entry key="JAVA" value="1019" />
           <entry key="RegExp" value="39" />
           <entry key="XML" value="89" />
         </counts>
@@ -111,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tamir/myPlugin/sizeCalculator/CalculateManySizesAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+            <state relative-caret-position="306">
+              <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,10 +122,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tamir/myPlugin/sizeCalculator/GenerateDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+            <state relative-caret-position="289">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1873#1874#0" expanded="true" />
+                <element signature="e#1917#1918#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,8 +136,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/tamir/myPlugin/sizeCalculator/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="89" column="41" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+            <state relative-caret-position="297">
+              <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -335,7 +336,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539270744568" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539272209498" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last.edited.regexp" value=" private double a = 34/43; //fdsf" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -389,6 +390,15 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
@@ -403,30 +413,56 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.73773986" weight="0.3673696" />
       <window_info anchor="bottom" x="-1898" y="336" width="1876" height="368" id="Run" order="2" sideWeight="0.6178038" weight="0.3277592" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.31772575" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5660981" weight="0.31772575" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.34517202" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.38219616" side_tool="true" weight="0.37513873" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.34448162" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5026652" side_tool="true" weight="0.34448162" />
       <window_info anchor="bottom" id="Inspection Results" order="8" visible="true" weight="0.32963374" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" sideWeight="0.4978678" weight="0.44173142" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.59381664" weight="0.32963374" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49733475" weight="0.34448162" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.59381664" weight="0.32887402" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.6593817" weight="0.3522854" />
       <window_info anchor="bottom" id="DB Execution Console" order="12" />
       <window_info anchor="bottom" id="Tail" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Structure" order="1" side_tool="true" weight="0.18176973" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.56396395" weight="0.10554371" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Database" order="9" weight="0.32995737" />
-      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.43603605" side_tool="true" weight="0.22334754" />
-      <window_info anchor="right" x="852" y="125" width="950" height="323" id="Documentation" order="11" side_tool="true" weight="0.18656716" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" sideWeight="0.56396395" weight="0.10554371" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32995737" />
+      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.43603605" side_tool="true" weight="0.22334754" />
+      <window_info anchor="right" x="852" y="125" width="950" height="323" id="Documentation" order="10" side_tool="true" weight="0.18656716" />
+      <window_info anchor="right" id="Structure" order="11" visible="true" weight="0.18176973" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -442,19 +478,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/tamir/myPlugin/sizeCalculator/Utils.java</url>
-          <line>73</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/tamir/myPlugin/sizeCalculator/Utils.java</url>
-          <line>78</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/tamir/myPlugin/sizeCalculator/Utils.java</url>
-          <line>104</line>
+          <line>97</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
@@ -715,16 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tamir/myPlugin/sizeCalculator/GenerateDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -732,10 +746,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tamir/myPlugin/sizeCalculator/GenerateDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1873#1874#0" expanded="true" />
+            <element signature="e#1917#1918#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tamir/myPlugin/sizeCalculator/CalculateManySizesAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+        <state relative-caret-position="306">
+          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -744,8 +770,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tamir/myPlugin/sizeCalculator/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="89" column="41" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+        <state relative-caret-position="297">
+          <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
