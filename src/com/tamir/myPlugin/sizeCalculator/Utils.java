@@ -39,41 +39,69 @@ public class Utils
     
     public static PsiField createDoubleField(PsiField psiField, Project project, PsiClass psiClass)
     {
-        Matcher matcher = splitFieldPattern.matcher(psiField.getText());
-        matcher.find();
-        
-        if (matcher.groupCount() != 3)
+        try
         {
-            return null;
-        }
-        
-        String expression = matcher.group(FIELD_VALUE_INDEX).replaceAll("\\s", "");
-        if (operatorList.stream().noneMatch(expression::contains))
-        {
-            return null;
-        }
-        
-        String comment = matcher.group(FIELD_COMMENT_INDEX);
-        if (comment.isEmpty() || comment.matches("\\s+"))
-        {
-            if (expression.startsWith("(") && expression.endsWith(")"))
+            if (!isValidField(psiField))
             {
-                comment = " // " + expression;
+                return null;
+            }
+            
+            Matcher matcher = splitFieldPattern.matcher(psiField.getText());
+            matcher.find();
+            String expression = matcher.group(FIELD_VALUE_INDEX).replaceAll("\\s", "");
+            
+            String comment = matcher.group(FIELD_COMMENT_INDEX);
+            if (comment.isEmpty() || "\\s+".matches(comment))
+            {
+                if (expression.startsWith("(") && expression.endsWith(")"))
+                {
+                    comment = " // " + expression;
+                }
+                else
+                {
+                    comment = " // (" + expression + ")";
+                }
+            }
+            
+            Double calculationResult = calculateExpression(expression);
+            if (calculationResult != null)
+            {
+                return JavaPsiFacade.getElementFactory(project).createFieldFromText(String.format("%s = %s;%s", matcher.group(FIELD_DEF_INDEX), calculationResult, comment), psiClass);
             }
             else
             {
-                comment = " // (" + expression + ")";
+                return null;
             }
         }
-        
-        Double calculationResult = calculateExpression(expression);
-        if (calculationResult != null)
-        {
-            return JavaPsiFacade.getElementFactory(project).createFieldFromText(String.format("%s = %s;%s", matcher.group(FIELD_DEF_INDEX), calculationResult, comment), psiClass);
-        }
-        else
+        catch (Exception e)
         {
             return null;
+        }
+    }
+    
+    public static boolean isValidField(PsiField psiField)
+    {
+        try
+        {
+            Matcher matcher = splitFieldPattern.matcher(psiField.getText());
+            matcher.find();
+            
+            if (matcher.groupCount() != 3)
+            {
+                return false;
+            }
+            
+            String expression = matcher.group(FIELD_VALUE_INDEX).replaceAll("\\s", "");
+            if (operatorList.stream().noneMatch(expression::contains))
+            {
+                return false;
+            }
+            
+            return true;
+        }
+        catch (Exception e)
+        {
+            return false;
         }
     }
 }

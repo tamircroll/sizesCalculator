@@ -1,9 +1,8 @@
 <idea-plugin>
-  <id>com.tamir.myPlugin.size
-    Calculator</id>
-  <name>sizes calculator</name>
+  <id>com.tamir.myPlugin.size.Calculator</id>
+  <name>size calculator</name>
   <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <vendor email="support@yourcompany.com" url="http://www.c.com">I have no company</vendor>
 
   <description><![CDATA[
       Enter short description for your plugin here.<br>
@@ -31,8 +30,10 @@
 
   <actions>
     <!-- Add your actions here -->
-    <action id="generateCalculateSize" class="com.tamir.myPlugin.sizeCalculator.GenerateAction" text="CalculateSize"
-            description="generates an implementation of something">
+    <action id="generateCalculateSize" class="com.tamir.myPlugin.sizeCalculator.CalculateSizeGenerateAction" text="CalculateSize" description="calculate one field">
+      <add-to-group group-id="GenerateGroup" anchor="last"/>
+    </action>
+    <action id="CalculateManySize" class="com.tamir.myPlugin.sizeCalculator.CalculateManySizesAction" text="CalculateManySizes" description="calculate many fields">
       <add-to-group group-id="GenerateGroup" anchor="last"/>
     </action>
   </actions>
