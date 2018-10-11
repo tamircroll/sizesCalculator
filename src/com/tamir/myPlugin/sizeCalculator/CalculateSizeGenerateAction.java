@@ -39,7 +39,6 @@ public class CalculateSizeGenerateAction extends AnAction
                 {
                     psiField.replace(doubleField);
                 }
-                
             }
         }.execute();
     }
