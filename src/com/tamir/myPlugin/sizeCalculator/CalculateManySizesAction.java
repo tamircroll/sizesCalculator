@@ -44,7 +44,6 @@ public class CalculateManySizesAction extends AnAction
                         psiField.replace(doubleField);
                     }
                 });
-                
             }
         }.execute();
     }
@@ -54,7 +53,6 @@ public class CalculateManySizesAction extends AnAction
     {
         PsiClass psiClass = getPsiClassFromContext(e);
         e.getPresentation().setEnabled(psiClass != null);
-        
     }
     
     private PsiClass getPsiClassFromContext(AnActionEvent e)
@@ -62,10 +60,7 @@ public class CalculateManySizesAction extends AnAction
         PsiFile psiFile = e.getData(LangDataKeys.PSI_FILE);
         Editor editor = e.getData(PlatformDataKeys.EDITOR);
         
-        if (psiFile == null || editor == null)
-        {
-            return null;
-        }
+        if (psiFile == null || editor == null) return null;
         
         int offset = editor.getCaretModel().getOffset();
         PsiElement elementAt = psiFile.findElementAt(offset);
