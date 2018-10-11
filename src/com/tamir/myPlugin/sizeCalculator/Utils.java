@@ -51,16 +51,11 @@ public class Utils
             String expression = matcher.group(FIELD_VALUE_INDEX).replaceAll("\\s", "");
             
             String comment = matcher.group(FIELD_COMMENT_INDEX);
-            if (comment.isEmpty() || "\\s+".matches(comment))
+            if (comment.isEmpty() || comment.matches("\\s+"))
             {
-                if (expression.startsWith("(") && expression.endsWith(")"))
-                {
-                    comment = " // " + expression;
-                }
-                else
-                {
-                    comment = " // (" + expression + ")";
-                }
+                comment = expression.startsWith("(") && expression.endsWith(")") ?
+                        " // " + expression :
+                        " // (" + expression + ")";
             }
             
             Double calculationResult = calculateExpression(expression);
